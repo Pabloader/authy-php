@@ -1,5 +1,5 @@
 {
-    "name": "pabloader/php",
+    "name": "pabloader/authy-php",
     "type": "library",
     "description": "PHP client for Authy",
     "keywords": ["api", "authentication", "two-factor"],
@@ -16,6 +16,10 @@
         {
             "name": "David Cuadrado",
             "email": "david@authy.com"
+        },
+        {
+            "name": "Pavel Kharchenko",
+            "email": "pavel@pabloader.ru"
         }
     ],
     "autoload": {
