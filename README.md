@@ -8,7 +8,7 @@ This library requires PHP 5.3+
 
 ### Install via composer:
 
-[`authy/php`](http://packagist.org/packages/authy/php) package is available on [Packagist](http://packagist.org).
+[`pabloader/authy-php`](http://packagist.org/pabloader/authy-php) package is available on [Packagist](http://packagist.org).
 
 Include it in your `composer.json` as follows:
 
