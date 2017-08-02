@@ -1,5 +1,5 @@
 {
-    "name": "authy/php",
+    "name": "pabloader/php",
     "type": "library",
     "description": "PHP client for Authy",
     "keywords": ["api", "authentication", "two-factor"],
@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
-        "guzzlehttp/guzzle": "~5.0"
+        "guzzlehttp/guzzle": ">=5.0"
     },
     "require-dev": {
         "EHER/PHPUnit": ">= 1.6"
