@@ -26,7 +26,7 @@ namespace Authy;
 
 class AuthyApi
 {
-    const VERSION = '2.5.0';
+    const VERSION = '2.6.0';
 
     protected $rest;
     protected $api_key;
@@ -41,7 +41,7 @@ class AuthyApi
     public function __construct($api_key, $api_url = "https://api.authy.com")
     {
         $this->rest = new \GuzzleHttp\Client(array(
-            'base_url' => "{$api_url}/protected/json/",
+            'base_uri' => "{$api_url}/protected/json/",
             'defaults' => array(
                 'headers'       => array('User-Agent' => $this->__getUserAgent(), 'X-Authy-API-Key' => $api_key ),
                 'exceptions'    => false
