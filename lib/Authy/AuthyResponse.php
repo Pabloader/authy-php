@@ -37,7 +37,12 @@ class AuthyResponse
     public function __construct($raw_response)
     {
         $this->raw_response = $raw_response;
-        $this->body = (! isset($raw_response->body)) ? $raw_response->json(['object' => true]) : $raw_response->body;;
+        $body = $raw_response->getBody();
+        $this->body = json_decode((string)$body);
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            $this->body = (string)$body;
+        }
+
         $this->errors = new \stdClass();
 
         // Handle errors

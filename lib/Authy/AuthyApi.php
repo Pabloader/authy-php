@@ -42,10 +42,8 @@ class AuthyApi
     {
         $this->rest = new \GuzzleHttp\Client(array(
             'base_uri' => "{$api_url}/protected/json/",
-            'defaults' => array(
-                'headers'       => array('User-Agent' => $this->__getUserAgent(), 'X-Authy-API-Key' => $api_key ),
-                'exceptions'    => false
-            )
+            'headers' => array('User-Agent' => $this->__getUserAgent(), 'X-Authy-API-Key' => $api_key ),
+            'http_errors' => false
         ));
 
         $this->api_key = $api_key;

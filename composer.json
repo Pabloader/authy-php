@@ -3,11 +3,11 @@
     "type": "library",
     "description": "PHP client for Authy",
     "keywords": ["api", "authentication", "two-factor"],
-    "homepage": "https://github.com/authy/authy-php",
+    "homepage": "https://github.com/pabloader/authy-php",
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
-        "guzzlehttp/guzzle": ">=5.0"
+        "guzzlehttp/guzzle": "~6.x"
     },
     "require-dev": {
         "EHER/PHPUnit": ">= 1.6"
